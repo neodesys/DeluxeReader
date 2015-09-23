@@ -33,9 +33,52 @@
        gnu-compatible ones (gcc, mingw and clang) and Visual C++
 #endif
 
+#include <cstddef>
+#include <cstdarg>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <csetjmp>
+#include <cassert>
+
+#include <atomic>
+#include <new>
+
+#include <sys/stat.h>
+
+#include <gif_lib.h>
+#include <jpeglib.h>
+#include <jerror.h>
+#define PNG_SKIP_SETJMP_CHECK
+#include <png.h>
+#include <tiffio.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+#include <mupdf/fitz.h>
+#ifdef __cplusplus
+}
+#endif
+
+#include <archive.h>
+#include <archive_entry.h>
+
+#ifdef __linux__
+#include <csignal>
+#include <unistd.h>
+
+#include <X11/Xlib.h>
+#include <X11/Xatom.h>
+#include <GL/glx.h>
+#endif //__linux__
+
 #ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
+#include <GL/gl.h>
+#include <io.h>
 #endif //_WIN32
 
 #endif //_PRECOMP_H_

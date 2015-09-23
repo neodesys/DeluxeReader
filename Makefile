@@ -99,6 +99,14 @@ endif
 ifeq ($(PLATFORM),linux)
     CXXFLAGS+=-pthread
     LDFLAGS+=-pthread
+    LDLIBS=-lX11 -lGL\
+           -larchive\
+           -lmupdf -lfreetype -ljpeg -lopenjp2 -lz -ljbig2dec\
+           -lpng\
+           -lgif\
+           -ltiff
+else
+    LDLIBS = -lopengl32
 endif
 
 ifeq ($(BUILD),debug)
