@@ -1,0 +1,3 @@
+[submodule "ext/EasyTest++"]
+	path = ext/EasyTest++
+	url = https://github.com/neodesys/EasyTest.git

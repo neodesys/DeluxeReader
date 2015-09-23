@@ -1,0 +1,17 @@
+ide/nbproject/private/
+
+ide/msvc/ipch/
+ide/msvc/.vs/
+ide/msvc/~*
+ide/msvc/*.sdf
+ide/msvc/*.opensdf
+ide/msvc/*.suo
+ide/msvc/*.user
+
+build/
+bin/
+doc/generated/
+
+*.swp
+*~
+core

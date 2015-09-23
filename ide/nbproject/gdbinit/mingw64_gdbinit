@@ -1,0 +1,2 @@
+target extended-remote :6400
+set remote exec-file DeluxeReader/bin/DeluxeReader_mingw64_debug.exe
